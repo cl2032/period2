@@ -1,5 +1,6 @@
 package period2;
 import robocode.*;
+
 //import java.awt.Color;
 
 // API help : http://robocode.sourceforge.net/docs/robocode/robocode/Robot.html
@@ -55,7 +56,7 @@ public class LeungChristopher extends Robot
 	        }
 	        else
 	        {
-	           fire(0.5);
+	           fire(.4);
 	        }
 		
 			turnGunLeft(30);
@@ -67,7 +68,7 @@ public class LeungChristopher extends Robot
 	 */
 	public void onHitByBullet(HitByBulletEvent e) {
 		// Replace the next line with any behavior you would like
-		ahead(200);
+		ahead(50);
 	}
 	
 	/**
@@ -77,6 +78,6 @@ public class LeungChristopher extends Robot
 		// Replace the next line with any behavior you would like
 		   double bearing = e.getBearing(); //get the bearing of the wall
     		turnRight(-bearing); //This isn't accurate but release your robot.
-		    ahead(100); //The robot goes away from the wall.
+		    ahead(50); //The robot goes away from the wall.
 	}	
 }
